@@ -1,0 +1,17 @@
+
+“squid:S2681>"|This line will not be executed in a loop; only the first line of this 2-line block will be. The rest will execute only once.(Ó”ó´
+T
+squid:S106!"9Replace this use of System.out or System.err by a logger.(Ô½ğûÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ò¾„®üÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’ûåëøÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(Ø¥¾¦
+Qsquid:S1854"5Remove this useless assignment to local variable "n".(µ’…ùÿÿÿÿ
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ø¥¾¦
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÃÄÔ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(”Ö´­
+N
+squid:S106"9Replace this use of System.out or System.err by a logger.(‹™Î	
+Bsquid:S1481"&Remove this unused "n" local variable.(µ’…ùÿÿÿÿ
+fsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ª¡˜
