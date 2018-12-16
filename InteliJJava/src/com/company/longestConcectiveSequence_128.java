@@ -2,12 +2,26 @@ package com.company;
 
 public class longestConcectiveSequence_128 {
 
+    public int longestConsecutive(int[] nums) {
+
+
+
+        return nums.length;
+
+    }
 
 }
 
 /*
 128. Longest Consecutive Sequence
-given an unsorted array of intergers, find the lenght of th longest consective elememnts sequence.
-for examp: ,given: [100, 4, 200, 1, 3, 2], return: [1,2,3,4] and returns its length 4.
-your algorithm should be O(n) complexity.
+
+Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+
+Your algorithm should run in O(n) complexity.
+
+Example:
+
+Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
  */
