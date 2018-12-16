@@ -1,0 +1,14 @@
+
+wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÚŸãŞ8áÌğÛù,
+[
+squid:S106""9Replace this use of System.out or System.err by a logger.(¿©ºûøÿÿÿÿ8©İàù,
+jsquid:S1858"G"word" is already a string, there's no need to call "toString()" on it.(˜®ûæıÿÿÿÿ8­ÅêŞù,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(áÅêêøÿÿÿÿ8ÈÙÜàù,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(˜®ûæıÿÿÿÿ8‘êŞù,
+|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­‚ÎÂùÿÿÿÿ8áÌğÛù,
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(âŠâÏ8±ğÛù,
+[
+squid:S1069"9Replace this use of System.out or System.err by a logger.(ÄÔæáşÿÿÿÿ8ë’°áù,
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªşİÜ
