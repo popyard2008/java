@@ -1,8 +1,6 @@
 package com.company;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -10,15 +8,32 @@ public class Main {
 	// write your code here
 
         //longestConcectiveSequence_128
-         int[] nums = {100, 4, 200, 1, 3, 2};
+//         int[] nums = {100, 4, 200, 1, 3, 2};
+//
+//         longestConcectiveSequence_128 lcsnum = new longestConcectiveSequence_128();
+//
+//          System.out.println(lcsnum.longestConsecutive(nums));
 
-         longestConcectiveSequence_128 lcsnum = new longestConcectiveSequence_128();
+//        List<String> wordList = new ArrayList<>();
+        Set<String> wordList = new TreeSet<>() ;
 
-          System.out.println(lcsnum.longestConsecutive(nums));
+        wordList.add("hot");
+        wordList.add("dot");
+        wordList.add("got");
+        wordList.add("hdt");
+//        wordList.add("dog");
+        wordList.add("lot");
+//        wordList.add("log");
+//        wordList.add("cog");
+        wordLadder_3_127 wl = new wordLadder_3_127();
+        System.out.println(wl.ladderLength("hit", "cog", wordList));
 
 
-
- //       KthLargestElement_215
+//        beginWord = "hit",
+//                endWord = "cog",
+//                wordList = ["hot","dot","dog","lot","log","cog"]
+//        wordList = ["hot","dot","dog","lot","log"]
+        //       KthLargestElement_215
 //        int[] nums = {3, 4, 5, 6, 7, 8};
 //        System.out.println("the kth largest number is " + KthLargestElement_215.findKthLargest(nums, 3));
 //

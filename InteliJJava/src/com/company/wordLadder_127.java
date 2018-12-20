@@ -1,29 +1,63 @@
 package com.company;
 
-import java.util.List;
+import java.util.*;
+
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 
 public class wordLadder_127 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (wordList == null) return 0;
         String starWord = beginWord;
-        for(String word : wordList){
-            if (canTransforma(starWord, word)){
-
+        HashMap<String, Integer> map = new HashMap<>(); //add
+        map.put(starWord, 1);
+        int cycle = 1; //flag to mark which round it scans the depth of matched pairs
+        boolean bln = true;
+        while (bln) {
+            bln = false;
+            HashMap<String, Integer> temp = new HashMap<>(); //Subtract
+            for (String key : map.keySet()) {
+//            Iterator<String> existed = map.keySet().iterator();
+//            while (existed.hasNext()){
+                starWord = key;
+                if (map.get(starWord) != cycle) {continue;}
+//                System.out.println("start word: " + starWord + " getKey " + map.get(starWord));
+                List<String> toRemove = new ArrayList<>();
+                for (String word : wordList) {
+                    if (canTransform(starWord, word)) {
+                        if (word.equals(endWord)) {
+                            System.out.println("startWord: " + starWord + " word :" + word + " end word :" + endWord);
+                            return map.get(starWord) + 1;
+                        } else {
+                            temp.put(word, map.get(key) + 1);
+//                            System.out.println("remove: " + word );
+                            toRemove.add(word);
+                            bln = true;
+                        }
+                    }
+                }
+                wordList.removeAll(toRemove);
             }
+            map.putAll(temp);
+            cycle += 1;
         }
-        return beginWord.length();
-    }
-    private boolean canTransforma (String wordOne, String wordTwo){
+            return 0;
+        }
 
-        int transTime = 0;
-        for (int i = 0; i < wordOne.length(); i ++) {
-            if(wordOne.charAt(i) != wordTwo.charAt(i)){
-                transTime += 1;
+        private boolean canTransform (String wordOne, String wordTwo){
+
+            int transTime = 0;
+            for (int i = 0; i < wordOne.length(); i++) {
+//                System.out.println("i = " + i + " wordOne.charAt(i) =" + wordOne.charAt(i) + " wordTwo.charAt(i) = " + wordTwo.charAt(i) + " transTime = " + transTime  );
+                if (wordOne.charAt(i) != wordTwo.charAt(i)) {
+                    transTime += 1;
+                }
+                if (transTime > 1) {
+                    return false;
+                }
             }
-            if (transTime > 1) {return false; }
+            return transTime == 1;
         }
-        return transTime == 1;
     }
-}
 
 /*
 Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
