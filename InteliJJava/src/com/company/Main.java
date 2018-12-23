@@ -6,6 +6,34 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+// ////////////////////////
+//  triangle
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
+        List<Integer> list4 = new ArrayList<>();
+        List<List<Integer>> finList = new ArrayList<>();
+
+        list1.add(2);
+        list2.add(3);
+        list2.add(4);
+        list3.add(6);
+        list3.add(5);
+        list3.add(7);
+        list4.add(4);
+        list4.add(1);
+        list4.add(8);
+        list4.add(3);
+
+        finList.add(list1);
+        finList.add(list2);
+        finList.add(list3);
+        finList.add(list4);
+
+        triangle_120 tag = new triangle_120();
+
+        System.out.println(tag.minimumTotal(finList));
+
 
         //longestConcectiveSequence_128
 //         int[] nums = {100, 4, 200, 1, 3, 2};
@@ -15,6 +43,11 @@ public class Main {
 //          System.out.println(lcsnum.longestConsecutive(nums));
 
 //        List<String> wordList = new ArrayList<>();
+
+
+// ////////////////////////
+/*
+//word ladder
         Set<String> wordList = new TreeSet<>() ;
 
         wordList.add("hot");
@@ -28,7 +61,7 @@ public class Main {
         wordLadder_3_127 wl = new wordLadder_3_127();
         System.out.println(wl.ladderLength("hit", "cog", wordList));
 
-
+*/
 //        beginWord = "hit",
 //                endWord = "cog",
 //                wordList = ["hot","dot","dog","lot","log","cog"]
